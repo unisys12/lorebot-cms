@@ -1,0 +1,26 @@
+{
+  "connection": "default",
+  "collectionName": "Npcs",
+  "info": {
+    "name": "npc",
+    "description": "None Playable Characters in the world of Destiny"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "name": {
+      "maxLength": 35,
+      "required": true,
+      "unique": true,
+      "type": "string"
+    },
+    "quotes": {
+      "collection": "quote",
+      "via": "npc"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/npcs",
+      "handler": "Npc.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/npcs/count",
+      "handler": "Npc.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/npcs/:_id",
+      "handler": "Npc.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/npcs",
+      "handler": "Npc.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/npcs/:_id",
+      "handler": "Npc.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/npcs/:_id",
+      "handler": "Npc.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

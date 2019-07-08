@@ -1,0 +1,28 @@
+{
+  "connection": "default",
+  "collectionName": "Quotes",
+  "info": {
+    "name": "quote",
+    "description": "Quote by a given NPC"
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "quote": {
+      "required": true,
+      "type": "text"
+    },
+    "tags": {
+      "collection": "tag",
+      "via": "quotes"
+    },
+    "npc": {
+      "model": "npc",
+      "via": "quotes"
+    }
+  }
+}
